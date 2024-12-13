@@ -21,12 +21,12 @@ const getProducts = async () => {
     displayProductItems(products);
   });
   
-  const displayProductItems = items => {
-    let displayProduct = items.map(
-      product => ` 
+  const displayProductItems = items => 
+    let  = items.map
+      product => 
                     <div class="product category__products">
                       <div class="product__header">
-                        <img src=${product.image} alt="product">
+                        <img src={product.image} alt="product">
                       </div>
                       <div class="product__footer">
                         <h3>${product.title}</h3>
@@ -76,14 +76,14 @@ const getProducts = async () => {
                         </li>
                     </ul>
                     </div>
-                    `
-    );
+                    
+    
   
     displayProduct = displayProduct.join("");
     if (categoryCenter) {
       categoryCenter.innerHTML = displayProduct;
     }
-  };
+  
   
   /*
   =============
